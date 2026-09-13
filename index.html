@@ -276,8 +276,9 @@
       gap: 20px;
     }
     .flip-card-wrap {
-      perspective: 500px;
-      height: 300px;
+      perspective: 1000px;
+      min-height: 240px;
+      height: 100%
       cursor: pointer;
     }
     .flip-card-inner-el {
@@ -294,15 +295,16 @@
       position: absolute;
       inset: 0;
       border-radius: 4px;
-      padding: 24px;
+      padding: 16px;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       border: 1px solid rgba(201,149,42,0.15);
+      box-sizing: border-box;
     }
-    .fc-back { transform: rotateY(180deg); justify-content: flex-start; gap: 15px; }
+    .fc-back { transform: rotateY(180deg); justify-content: flex-start; gap: 8px; }
     .fc-symbol { font-size: 44px; line-height: 1; }
     .fc-bottom {}
     .fc-sub {
